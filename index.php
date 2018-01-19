@@ -6,8 +6,13 @@
  * Time: 10:18
  */
 require_once ("config.php");
+
+use Cliente\Cadastro;
+
 $cad = new Cadastro();
 
-$cad->getNome("teste da silva");
+$cad->setNome("teste da silva");
 $cad->setEmail("teste@teste.com");
-$cad->getSenha("123456");
+$cad->setSenha("123456");
+
+$cad->registraVenda();
